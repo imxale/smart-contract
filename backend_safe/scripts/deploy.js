@@ -1,7 +1,12 @@
 const hre = require("hardhat");
 
 async function main() {
-    const nominees = ["Kylian Mbappe", "Erling Haaland", "Vinicius Jr"];
+    const nominees = [
+        "Ousmane Dembélé",
+        "Kylian Mbappe",
+        "Erling Haaland",
+        "Lamine Yamal",
+    ];
 
     const BallonOrVoting = await hre.ethers.getContractFactory("BallonOrVoting");
     const votingContract = await BallonOrVoting.deploy(nominees);
