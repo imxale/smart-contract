@@ -58,7 +58,8 @@
 import { ref, onMounted } from "vue";
 import { ethers } from "ethers";
 
-const contractAddress = "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707";
+const contractAddress = "0x15b41Ba8528065861A8D5267B0D1Be465886A75A";
+
 const abi = [
     "function getNominees() public view returns (string[])",
     "function vote(string nominee) public",
